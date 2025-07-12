@@ -1,4 +1,4 @@
-fn types() {
+pub fn types() {
     let x = 42;         // type inferred as i32
     let flag = true;    // inferred as bool
 

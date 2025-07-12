@@ -1,5 +1,6 @@
 mod moving;
 
 pub fn background_main() {
-    moving::control_flow();
+    moving::ownership_move_simple();
+    moving::ownership_move_conditional();
 }

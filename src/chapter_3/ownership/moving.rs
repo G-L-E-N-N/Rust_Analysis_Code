@@ -16,5 +16,5 @@ pub fn ownership_move_conditional() {
         println!("Using any data: {}", data); // No move in else
     }
 
-    println!("Data: {}", data); // Error: Ownership was moved
+    // println!("Data: {}", data); // Error: Ownership was moved
 }

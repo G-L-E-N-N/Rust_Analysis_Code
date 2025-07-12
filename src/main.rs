@@ -1,5 +1,5 @@
 mod Chapter_2;
 
 fn main() {
-    chapter_2::syntax_overview::background_main();
+    Chapter_2::Syntax_Overview::background_main();
 }

@@ -1,4 +1,4 @@
-fn printing() {
+pub fn printing() {
     println!("Hello, Rust!");
 
     let name = "Rust";

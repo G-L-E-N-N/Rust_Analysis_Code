@@ -3,7 +3,7 @@ struct Point {
     y: f64,
 }
 
-fn structs() {
+pub fn structs() {
     let p = Point { x: 3.0, y: 4.0 };
     println!("x = {}, y = {}", p.x, p.y);
 }

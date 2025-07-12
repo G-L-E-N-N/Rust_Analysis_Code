@@ -1,1 +1,1 @@
-pub mod syntax_overview;
+pub mod Syntax_Overview;

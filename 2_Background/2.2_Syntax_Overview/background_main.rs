@@ -6,7 +6,7 @@ mod structs;
 mod types;
 mod variables;
 
-fn main() {
+pub fn background_main() {
   control_flow_loops::control_flow();
   functions::functions();
   printing::printing();

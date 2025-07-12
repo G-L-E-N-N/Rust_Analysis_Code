@@ -1,6 +1,7 @@
 mod moving;
 mod copy_types;
 mod drop;
+mod function_calls;
 
 pub fn ownership_main() {
     moving::ownership_move_simple();
@@ -10,4 +11,5 @@ pub fn ownership_main() {
     drop::drop_scope_simple();
     drop::drop_scope_block();
     drop::drop_password_prompt();
+    function_calls::pass_by_value();
 }

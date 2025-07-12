@@ -1,4 +1,4 @@
-fn variables() {
+pub fn variables() {
     let x = 5;         // immutable variable: value cannot be changed after initialization
     let mut y = 10;    // mutable variable: value can be modified after initialization
 

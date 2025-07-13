@@ -8,3 +8,8 @@ pub fn pass_by_value() {
 fn send_order(order: String) { // Ownership of order is moved here
     println!("Sending order: {}", order); // Processing the moved order string
 }
+
+
+fn main() {
+    //pass_by_value(); // Intended compile-error
+}

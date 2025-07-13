@@ -11,7 +11,7 @@ pub fn drop_scope_block() {
         println!("{}", s); // s owns the string here
     } // s goes out of scope here, and its memory is automatically freed
 
-    // println!("{}", s); // ERROR: s does not exist here anymore
+    println!("{}", s); // ERROR: s does not exist here anymore
 }
 
 pub fn drop_password_prompt() {

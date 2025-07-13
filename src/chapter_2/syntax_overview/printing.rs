@@ -6,3 +6,7 @@ pub fn printing() {
 
     println!("The language {} was first released in {}", name, year);
 }
+
+fn main() {
+    printing();
+}

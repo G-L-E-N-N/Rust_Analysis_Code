@@ -50,7 +50,7 @@ name = "dangling_references"
 path = "src/chapter_3/borrowing/dangling_references.rs"
 
 [[bin]]
-name = "function_calls"
+name = "function_calls_v"
 path = "src/chapter_3/borrowing/function_calls.rs"
 
 
@@ -68,5 +68,5 @@ name = "drop"
 path = "src/chapter_3/ownership/drop.rs"
 
 [[bin]]
-name = "function_calls"
+name = "function_calls_r"
 path = "src/chapter_3/ownership/function_calls.rs"

@@ -92,3 +92,9 @@ path = "src/chapter_3/cyclic_data_structures/attempted_rust_trans.rs"
 [[bin]]
 name = "cyclic_linked_list_rust"
 path = "src/chapter_3/cyclic_data_structures/cyclic_linked_list_rust.rs"
+
+
+# chapter_4 -> declerative macros
+[[bin]]
+name = "debug_values"
+path = "src/chapter_4/declerative_macros/debug_values.rs"

@@ -9,3 +9,7 @@ pub fn variables() {
     println!("x = {}", x);
     println!("y = {}", y);
 }
+
+fn main() {
+    variables();
+}

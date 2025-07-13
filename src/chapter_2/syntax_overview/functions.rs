@@ -18,3 +18,7 @@ pub fn functions() {
     println!("Square of {} is {}", num2, square(num2));
     println!("{}", check_number(num2));
 }
+
+fn main() {
+    functions();
+}

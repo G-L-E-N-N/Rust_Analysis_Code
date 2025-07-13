@@ -76,3 +76,9 @@ path = "src/chapter_3/ownership/function_calls_ownership.rs"
 [[bin]]
 name = "use_after_free_rust"
 path = "src/chapter_3/use-after-free_memory_leaks/use_after_free_rust.rs"
+
+
+# chapter_3 -> concurrency errors
+[[bin]]
+name = "parallel_sum"
+path = "src/chapter_3/use-after-free_memory_leaks/arc_mutex.rs"

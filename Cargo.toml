@@ -4,3 +4,33 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+
+
+# chapter_2 code
+[[bin]]
+name = "control_flow_loops"
+path = "src/chapter_2/syntax_overview/control_flow_loops.rs"
+
+[[bin]]
+name = "functions"
+path = "src/chapter_2/syntax_overview/functions.rs"
+
+[[bin]]
+name = "printing"
+path = "src/chapter_2/syntax_overview/printing.rs"
+
+[[bin]]
+name = "references"
+path = "src/chapter_2/syntax_overview/references.rs"
+
+[[bin]]
+name = "structs"
+path = "src/chapter_2/syntax_overview/structs.rs"
+
+[[bin]]
+name = "types"
+path = "src/chapter_2/syntax_overview/types.rs"
+
+[[bin]]
+name = "variables"
+path = "src/chapter_2/syntax_overview/variables.rs"

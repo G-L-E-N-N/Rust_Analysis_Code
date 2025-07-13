@@ -1,5 +1,5 @@
 mod immutable_borrows;
-mod muatable_borrows;
+mod mutable_borrows;
 mod dangling_references;
 
 pub fn borrowing_main(){

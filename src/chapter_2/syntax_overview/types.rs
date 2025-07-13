@@ -8,3 +8,7 @@ pub fn types() {
     println!("flag = {}", flag);
     println!("y = {}", y);
 }
+
+fn main() {
+    types();
+}

@@ -8,3 +8,7 @@ pub fn references() {
     *z += 1;         // dereference z to change the value
     println!("y is now: {}", y);
 }
+
+fn main() {
+    references();
+}

@@ -44,6 +44,6 @@ fn bubble_sort(arr: &mut [i32]) {
 
 fn main() {
     mutable_borrow_and_modify();
-    //multiple_mutable_borrows_illegal(); // Intended compile-error
+    multiple_mutable_borrows_illegal(); // Intended compile-error
     sorting_mut_slice_example();
 }

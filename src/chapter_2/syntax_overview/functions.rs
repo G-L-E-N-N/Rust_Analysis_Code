@@ -9,16 +9,12 @@ fn check_number(x: i32) -> &'static str {
     "Number is positive or zero."
 }
 
-pub fn functions() {
+fn main() {
     let num = -5;
     println!("Square of {} is {}", num, square(num));
     println!("{}", check_number(num));
-
+    
     let num2 = 10;
     println!("Square of {} is {}", num2, square(num2));
     println!("{}", check_number(num2));
-}
-
-fn main() {
-    functions();
 }

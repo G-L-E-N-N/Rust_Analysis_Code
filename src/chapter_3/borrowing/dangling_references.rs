@@ -5,5 +5,5 @@ pub fn dangling_reference_example() -> &String {
 }
 
 fn main(){
-    //dangling_reference_example(); // Intended compile-error
+    dangling_reference_example(); // Intended compile-error
 }

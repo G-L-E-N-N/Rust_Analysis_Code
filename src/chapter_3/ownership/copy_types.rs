@@ -28,3 +28,8 @@ fn heater_on(temp: i32) -> i32 {
 fn ac_on(temp: i32) -> i32 {
     temp - 2
 }
+
+fn main() {
+    example_copy_simple();
+    example_copy_temperature();
+}

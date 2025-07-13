@@ -43,3 +43,10 @@ pub fn drop_password_prompt() {
         }
     }
 }
+
+
+fn main() {
+    drop_scope_simple();
+    // drop_scope_block(); // Intended compile-error
+    drop_password_prompt();
+}

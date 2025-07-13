@@ -7,3 +7,7 @@ pub fn control_flow() {
         }
     }
 }
+
+fn main() {
+    control_flow();
+}

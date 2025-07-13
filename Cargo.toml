@@ -70,3 +70,9 @@ path = "src/chapter_3/ownership/drop.rs"
 [[bin]]
 name = "function_calls_ownership"
 path = "src/chapter_3/ownership/function_calls_ownership.rs"
+
+
+# chapter_3 -> use-after-free and memory leak
+[[bin]]
+name = "use_after_free_rust"
+path = "src/chapter_3/use-after-free_memory_leaks/use_after_free_rust.rs"

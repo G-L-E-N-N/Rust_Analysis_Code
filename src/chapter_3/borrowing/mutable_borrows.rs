@@ -13,13 +13,13 @@ pub fn multiple_mutable_borrows_illegal() {
 
     let r1 = &mut s; // first mutable borrow
 
-    // let r2 = &mut s; // ERROR: cannot borrow `s` as mutable more than once at a time
-    // let r3 = &s;     // ERROR: cannot borrow `s` as immutable while it is also borrowed as mutable
+    let r2 = &mut s; // ERROR: cannot borrow `s` as mutable more than once at a time
+    let r3 = &s;     // ERROR: cannot borrow `s` as immutable while it is also borrowed as mutable
 
     println!("r1: {}", r1);
 
-    // println!("r2: {}", r2);
-    // println!("r3: {}", r3);
+    println!("r2: {}", r2);
+    println!("r3: {}", r3);
 }
 
 pub fn sorting_mut_slice_example() {

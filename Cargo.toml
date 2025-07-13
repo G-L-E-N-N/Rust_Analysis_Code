@@ -82,3 +82,13 @@ path = "src/chapter_3/use-after-free_memory_leaks/use_after_free_rust.rs"
 [[bin]]
 name = "arc_mutex"
 path = "src/chapter_3/concurrency_errors/arc_mutex.rs"
+
+
+# chapter_3 -> cyclic data structures
+[[bin]]
+name = "attempted_rust_trans"
+path = "src/chapter_3/cyclic_data_structures/attempted_rust_trans.rs"
+
+[[bin]]
+name = "cyclic_linked_list_rust"
+path = "src/chapter_3/cyclic_data_structures/cyclic_linked_list_rust.rs"

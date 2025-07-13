@@ -18,3 +18,8 @@ pub fn ownership_move_conditional() {
 
     println!("Data: {}", data); // Error: Ownership was moved
 }
+
+fn main() {
+    ownership_move_simple();
+    //ownership_move_conditional(); // Intended compile-error
+}

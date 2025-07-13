@@ -81,4 +81,4 @@ path = "src/chapter_3/use-after-free_memory_leaks/use_after_free_rust.rs"
 # chapter_3 -> concurrency errors
 [[bin]]
 name = "arc_mutex"
-path = "src/chapter_3/use-after-free_memory_leaks/arc_mutex.rs"
+path = "src/chapter_3/concurrency_errors/arc_mutex.rs"

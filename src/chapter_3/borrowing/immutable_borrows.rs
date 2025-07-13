@@ -28,3 +28,8 @@ fn get_server(config: &String) -> &str {
 fn get_port(config: &String) -> &str {
     config.split(';').nth(1).unwrap_or("")
 }
+
+fn main() {
+    multiple_immutable_borrows_basic();
+    multiple_immutable_borrows_config();
+}

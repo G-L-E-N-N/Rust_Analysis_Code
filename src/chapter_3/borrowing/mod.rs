@@ -1,5 +1,6 @@
 mod immutable_borrows;
 mod muatable_borrows;
+mod dangling_references;
 
 pub fn borrowing_main(){
   immutable_borrows::multiple_immutable_borrows_basic();
@@ -7,4 +8,5 @@ pub fn borrowing_main(){
   mutable_borrows::mutable_borrow_and_modify();
   mutable_borrows::multiple_mutable_borrows_illegal();
   mutable_borrows::sorting_mut_slice_example();
+  dangling_references::dangling_references_example();
 }

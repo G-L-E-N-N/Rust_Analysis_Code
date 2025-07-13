@@ -11,5 +11,5 @@ fn send_order(order: String) { // Ownership of order is moved here
 
 
 fn main() {
-    //pass_by_value(); // Intended compile-error
+    pass_by_value(); // Intended compile-error
 }

@@ -21,5 +21,5 @@ pub fn ownership_move_conditional() {
 
 fn main() {
     ownership_move_simple();
-    //ownership_move_conditional(); // Intended compile-error
+    ownership_move_conditional(); // Intended compile-error
 }

@@ -45,3 +45,8 @@ fn apply_discount(order: &mut Order) { // Takes a mutable reference to modify th
         println!("No discount or free cookie this time."); // No changes applied
     }
 }
+
+fn main() {
+    pass_by_reference();
+    multiple_pass_by_reference();
+}

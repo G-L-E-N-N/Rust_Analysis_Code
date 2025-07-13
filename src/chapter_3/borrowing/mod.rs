@@ -11,5 +11,5 @@ pub fn borrowing_main(){
   mutable_borrows::sorting_mut_slice_example();
   //dangling_references::dangling_reference_example();
   function_calls::pass_by_reference();
-  function_calls:multiple_pass_by_reference();
+  function_calls::multiple_pass_by_reference();
 }

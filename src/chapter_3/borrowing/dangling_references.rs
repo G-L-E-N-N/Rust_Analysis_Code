@@ -3,3 +3,7 @@ pub fn dangling_reference_example() -> &String {
     
     &s // Error: returns reference to local variable that will be dropped
 }
+
+fn main(){
+    //dangling_reference_example(); // Intended compile-error
+}

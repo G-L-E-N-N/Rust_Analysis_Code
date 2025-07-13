@@ -41,18 +41,5 @@ fn main() {
     list.add_node(1);
     list.add_node(2);
     list.add_node(3);
-
-    if let Some(head) = &list.head {
-        let mut current = Rc::clone(head);
-        loop {
-            print!("{} ", current.borrow().value);
-            let next = current.borrow().next.as_ref().unwrap().clone();
-            current = next;
-
-            if Rc::ptr_eq(&current, &head) {
-                break;
-            }
-        }
-        println!();
-    }
 }
+

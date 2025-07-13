@@ -8,5 +8,5 @@ pub fn borrowing_main(){
   mutable_borrows::mutable_borrow_and_modify();
   mutable_borrows::multiple_mutable_borrows_illegal();
   mutable_borrows::sorting_mut_slice_example();
-  dangling_references::dangling_references_example();
+  dangling_references::dangling_reference_example();
 }

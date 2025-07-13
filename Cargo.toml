@@ -6,7 +6,7 @@ edition = "2021"
 [dependencies]
 
 
-# chapter_2 code
+# chapter_2 -> syntax_overview code
 [[bin]]
 name = "control_flow_loops"
 path = "src/chapter_2/syntax_overview/control_flow_loops.rs"
@@ -34,3 +34,21 @@ path = "src/chapter_2/syntax_overview/types.rs"
 [[bin]]
 name = "variables"
 path = "src/chapter_2/syntax_overview/variables.rs"
+
+
+# chapter_3 -> borrowing code
+[[bin]]
+name = "immutable_borrows"
+path = "src/chapter_3/borrowing/immutable_borrows.rs"
+
+[[bin]]
+name = "mutable_borrows"
+path = "src/chapter_3/borrowing/mutable_borrows.rs"
+
+[[bin]]
+name = "dangling_references"
+path = "src/chapter_3/borrowing/dangling_references.rs"
+
+[[bin]]
+name = "function_calls"
+path = "src/chapter_3/borrowing/function_calls.rs"

@@ -52,3 +52,20 @@ path = "src/chapter_3/borrowing/dangling_references.rs"
 [[bin]]
 name = "function_calls"
 path = "src/chapter_3/borrowing/function_calls.rs"
+
+# chapter_3 -> ownership code
+[[bin]]
+name = "moving"
+path = "src/chapter_3/ownership/moving.rs"
+
+[[bin]]
+name = "copy_types"
+path = "src/chapter_3/ownership/copy_types.rs"
+
+[[bin]]
+name = "drop"
+path = "src/chapter_3/ownership/drop.rs"
+
+[[bin]]
+name = "function_calls"
+path = "src/chapter_3/ownership/function_calls.rs"

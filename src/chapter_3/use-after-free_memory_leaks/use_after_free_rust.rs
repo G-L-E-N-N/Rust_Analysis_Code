@@ -4,3 +4,7 @@ pub fn use_after_free() {
     drop(s);                 // Attempt to move `s`, which would deallocate the memory
     println!("{}", r);       // Use of `r`, which refers to `s`
 }
+
+fn main() {
+    use_after_free(); // Intended compile-error
+}

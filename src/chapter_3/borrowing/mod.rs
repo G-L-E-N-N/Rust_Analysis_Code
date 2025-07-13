@@ -1,6 +1,6 @@
 mod immutable_borrows;
 mod mutable_borrows;
-mod dangling_references;
+//mod dangling_references;
 
 pub fn borrowing_main(){
   immutable_borrows::multiple_immutable_borrows_basic();

@@ -1,16 +1,15 @@
 #include <stdio.h>
 
-int val = 0;
-
 #define CLAMP(x, low, high) ((x) < (low) ? (low) : ((x) > (high) ? (high) : (x)))
 
-int get_val() {
-    val = val + 1;   // Side effect: increment global val
-    return val;
+int get_val(int* x) {
+    *x += 1;
+    return *x;
 }
 
 int main() {
-    int result = CLAMP(get_val(), 2, 5);
+    int val = 0;
+    int result = CLAMP(get_val(&val), 2, 5);
     printf("Result: %d, val: %d\n", result, val);
     return 0;
 }

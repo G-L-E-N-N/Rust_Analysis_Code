@@ -1,5 +1,4 @@
 #include <iostream>
-#include <memory>
 
 // Abstract base class
 class Shape {
@@ -19,15 +18,8 @@ public:
 };
 
 int main() {
-    // Polymorphic usage
-    Shape* shape = new Circle(5.0);
-    std::cout << "Area: " << shape->area() << std::endl;
-
-    delete shape; // Safe due to virtual destructor
-
-    // Alternative with smart pointers (recommended in modern C++)
-    std::unique_ptr<Shape> smartShape = std::make_unique<Circle>(4.0);
-    std::cout << "Area (smart pointer): " << smartShape->area() << std::endl;
-
+    Circle circle(5.0);
+    std::cout << "Circle area: " << std::fixed << std::setprecision(2)
+              << circle.area() << std::endl;
     return 0;
 }

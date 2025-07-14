@@ -96,6 +96,21 @@ path = "src/chapter_3/cyclic_data_structures/cyclic_linked_list_rust.rs"
 
 # chapter_4 -> declerative macros
 [[bin]]
+name = "clamp_c"
+path = "src/chapter_4/declerative_macros/clamp_c.c"
+
+
+[[bin]]
+name = "clamp_cpp"
+path = "src/chapter_4/declerative_macros/clamp_cpp.cpp"
+
+
+[[bin]]
+name = "clamp_rust"
+path = "src/chapter_4/declerative_macros/clamp_rust.rs"
+
+
+[[bin]]
 name = "debug_values"
 path = "src/chapter_4/declerative_macros/debug_values.rs"
 

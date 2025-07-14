@@ -12,3 +12,8 @@ impl Shape for Circle {
         3.14 * self.radius * self.radius
     }
 }
+
+fn main() {
+    let circle = Circle { radius: 5.0 };
+    println!("Circle area: {:.2}", circle.area());
+}

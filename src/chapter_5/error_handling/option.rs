@@ -23,7 +23,7 @@ fn main() {
         User { id: 3, name: "Charlie".to_string() },
     ];
 
-    let id_to_find = 2;
+    let id_to_find = 5;
 
     // Handle the result of the search explicitly
     match find_user(id_to_find, &users) {

@@ -136,4 +136,4 @@ path = "src/chapter_5/error_handling/result.rs"
 
 [[bin]]
 name = "simpifying_prpagation"
-path = "src/chapter_5/error_handling/simpifying_propagation.rs"
+path = "src/chapter_5/error_handling/simplifying_propagation.rs"

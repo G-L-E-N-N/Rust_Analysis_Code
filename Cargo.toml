@@ -146,16 +146,16 @@ path = "src/chapter_5/comparison_oop/composition.rs"
 
 [[bin]]
 name = "dynamic_dispatch_rust"
-path = "src/chapter_5/error_handling/dynamic_dispatch_rust.rs"
+path = "src/chapter_5/comparison_oop/dynamic_dispatch_rust.rs"
 
 [[bin]]
 name = "result_based"
-path = "src/chapter_5/error_handling/result_based.rs"
+path = "src/chapter_5/comparison_oop/result_based.rs"
 
 [[bin]]
 name = "rust_reuse"
-path = "src/chapter_5/error_handling/rust_reuse.rs"
+path = "src/chapter_5/comparison_oop/rust_reuse.rs"
 
 [[bin]]
 name = "static_dispatch"
-path = "src/chapter_5/error_handling/static_dispatch.rs"
+path = "src/chapter_5/comparison_oop/static_dispatch.rs"

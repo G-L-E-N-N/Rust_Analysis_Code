@@ -113,3 +113,14 @@ path = "src/chapter_4/declerative_macros/debug_values_fn.rs"
 [[bin]]
 name = "matrix"
 path = "src/chapter_4/declerative_macros/matrix.rs"
+
+
+# chapter_5 -> abstraction and flexibility
+
+[[bin]]
+name = "generics"
+path = "src/chapter_5/abstraction_flexibility/generics.rs"
+
+[[bin]]
+name = "traits"
+path = "src/chapter_5/abstraction_flexibility/traits.rs"

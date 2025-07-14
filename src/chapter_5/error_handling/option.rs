@@ -35,6 +35,6 @@ fn main() {
     
     match find_user(id_to_find, &users) {
         Some(user) => println!("Found user: {} with ID {}", user.name, user.id),
-        None => println!("No user found with ID {}", id_to_find),
+        None => println!("No user found with ID {}", id_to_find_2),
     }
 }

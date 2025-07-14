@@ -23,9 +23,16 @@ fn main() {
         User { id: 3, name: "Charlie".to_string() },
     ];
 
-    let id_to_find = 5;
+    let id_to_find = 2;
 
     // Handle the result of the search explicitly
+    match find_user(id_to_find, &users) {
+        Some(user) => println!("Found user: {} with ID {}", user.name, user.id),
+        None => println!("No user found with ID {}", id_to_find),
+    }
+
+    let id_to_find_2 = 5;
+    
     match find_user(id_to_find, &users) {
         Some(user) => println!("Found user: {} with ID {}", user.name, user.id),
         None => println!("No user found with ID {}", id_to_find),

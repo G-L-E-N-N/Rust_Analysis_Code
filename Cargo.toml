@@ -125,7 +125,7 @@ name = "traits"
 path = "src/chapter_5/abstraction_flexibility/traits.rs"
 
 
-# chapter_5 -> abstraction and flexibility
+# chapter_5 -> error handling
 [[bin]]
 name = "option"
 path = "src/chapter_5/error_handling/option.rs"
@@ -137,3 +137,25 @@ path = "src/chapter_5/error_handling/result.rs"
 [[bin]]
 name = "simplifying_propagation"
 path = "src/chapter_5/error_handling/simplifying_propagation.rs"
+
+
+# chapter_5 -> OOP comparison
+[[bin]]
+name = "composition"
+path = "src/chapter_5/comparison_oop/composition.rs"
+
+[[bin]]
+name = "dynamic_dispatch_rust"
+path = "src/chapter_5/error_handling/dynamic_dispatch_rust.rs"
+
+[[bin]]
+name = "result_based"
+path = "src/chapter_5/error_handling/result_based.rs"
+
+[[bin]]
+name = "rust_reuse"
+path = "src/chapter_5/error_handling/rust_reuse.rs"
+
+[[bin]]
+name = "static_dispatch"
+path = "src/chapter_5/error_handling/static_dispatch.rs"

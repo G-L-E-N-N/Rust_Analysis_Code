@@ -12,7 +12,7 @@ fn find_email(user: &User) -> Option<&str> {
 
 // With ? operator (concise propagation)
 fn find_email_short(user: &User) -> Option<&str> {
-    Some(user.profile?.email?)
+    Some(user.profile.as_ref()?.email?)
 }
 
 // Figure 5.8 
@@ -30,7 +30,7 @@ struct Address {
 
 fn get_street(order: &Order) -> Option<&str> {
     // The '?' operator propagates None early if any intermediate value is missing
-    Some(order.customer?.address?.street?.as_str())
+    Some(order.customer.as_ref()?.address.as_ref()?.street.as_ref()?.as_str())
 }
 
 // Figure 5.9

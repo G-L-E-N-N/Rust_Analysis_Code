@@ -135,5 +135,5 @@ name = "result"
 path = "src/chapter_5/error_handling/result.rs"
 
 [[bin]]
-name = "simplifying_prpagation"
+name = "simplifying_propagation"
 path = "src/chapter_5/error_handling/simplifying_propagation.rs"

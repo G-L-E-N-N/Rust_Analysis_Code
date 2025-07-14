@@ -44,7 +44,7 @@ fn print_greeting_dyn(entity: &dyn Greet) {
 }
 
 fn show_identity_and_greet<T: Greet + Identify>(entity: &T) {
-    println!("{} and my this is my {}", entity.greet(), entity.id());
+    println!("{} and this is my {}", entity.greet(), entity.id());
 }
 
 fn main() {

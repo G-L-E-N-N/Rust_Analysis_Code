@@ -1,22 +1,28 @@
 #include <stdio.h>
 
-int foo(int *z) {
-    (*z)++;
-    printf("foo called, z now = %d\n", *z);
-    return *z;
+int foo(int* x) {
+    (*x)++;
+    printf("foo called, x is now %d\n", *x);
+    return *x;
 }
 
-#define min(X, Y)  ((X) < (Y) ? (X) : (Y))
+int bar(int* y) {
+    (*y) += 2;
+    printf("bar called, y is now %d\n", *y);
+    return *y;
+}
+
+#define min(X, Y) ((X) < (Y) ? (X) : (Y))
 
 int main() {
-    int z = 5;
-    int x = 2;
-    int y = 3;
-
-    int next = min(x + y, foo(&z));  // foo wird evtl. 2x aufgerufen!
-
-    printf("next = %d\n", next);
-    printf("z = %d\n", z);
-
+    int a = 5;
+    int b = 5;
+    
+    int result = min(foo(&a), bar(&b));
+    
+    printf("Result: %d\n", result);
+    printf("Final a: %d\n", a);
+    printf("Final b: %d\n", b);
+    
     return 0;
 }

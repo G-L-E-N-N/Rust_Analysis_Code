@@ -1,15 +1,6 @@
-static mut VAL: i32 = 0;
-
-fn get_val() -> i32 {
-    unsafe {
-        VAL += 1;
-        VAL
-    }
-}
-
 macro_rules! clamp {
     ($x:expr, $low:expr, $high:expr) => {{
-        let val = $x; // Evaluate $x exactly once
+        let val = $x;
         if val < $low {
             $low
         } else if val > $high {
@@ -20,9 +11,16 @@ macro_rules! clamp {
     }};
 }
 
-fn main() {
-    let result = clamp!(get_val(), 2, 5);
-    unsafe {
-        println!("Result: {}, VAL: {}", result, VAL);
-    }
+fn get_val(val: &mut i32) -> i32 {
+    *val += 1;
+    *val
 }
+
+fn main() {
+    let mut val = 0;
+
+    let result = clamp!(get_val(&mut val), 2, 5);
+
+    println!("Result: {}, val: {}", result, val);
+}
+

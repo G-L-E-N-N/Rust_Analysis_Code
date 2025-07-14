@@ -116,7 +116,6 @@ path = "src/chapter_4/declerative_macros/matrix.rs"
 
 
 # chapter_5 -> abstraction and flexibility
-
 [[bin]]
 name = "generics"
 path = "src/chapter_5/abstraction_flexibility/generics.rs"
@@ -124,3 +123,17 @@ path = "src/chapter_5/abstraction_flexibility/generics.rs"
 [[bin]]
 name = "traits"
 path = "src/chapter_5/abstraction_flexibility/traits.rs"
+
+
+# chapter_5 -> abstraction and flexibility
+[[bin]]
+name = "option"
+path = "src/chapter_5/error_handling/option.rs"
+
+[[bin]]
+name = "result"
+path = "src/chapter_5/error_handling/result.rs"
+
+[[bin]]
+name = "simpifying_prpagation"
+path = "src/chapter_5/error_handling/simpifying_propagation.rs"

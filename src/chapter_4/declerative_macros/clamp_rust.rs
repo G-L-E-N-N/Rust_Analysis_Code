@@ -12,7 +12,7 @@ fn bar(y: &mut i32) -> i32 {
 
 macro_rules! min {
     ($x:expr, $y:expr) => {{
-        if x_val < y_val { x_val } else { y_val }
+        if x < y { x } else { y }
     }};
 }
 

@@ -1,15 +1,16 @@
 #include <stdio.h>
 
-#define CLAMP(x, low, high) ((x) < (low) ? (low) : ((x) > (high) ? (high) : (x)))
-
-int get_val(int* x) {
-    *x += 1;
-    return *x;
+int get_value(int *counter) {
+    (*counter) += 1;
+    return *counter; // Rückgabe ist aktueller Wert nach Inkrement
 }
 
+#define MAX(a, b) ((a) > (b) ? (a) : (b))
+
 int main() {
-    int val = 0;
-    int result = CLAMP(get_val(&val), 2, 5);
-    printf("Result: %d, val: %d\n", result, val);
+    int count = 0;
+    int result = MAX(get_value(&count), 3);
+    printf("Result: %d\n", result);
+    printf("Call count: %d\n", count);
     return 0;
 }

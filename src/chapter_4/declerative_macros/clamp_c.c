@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int foo(int* x) {
-    (*x)++;
+    (*x)+=1;
     printf("foo called, x is now %d\n", *x);
     return *x;
 }

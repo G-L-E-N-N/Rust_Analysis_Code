@@ -1,20 +1,26 @@
 #include <iostream>
 
-int val = 0;
+int foo(int& x) {
+    x++;
+    std::cout << "foo called, x = " << x << "\n";
+    return x;
+}
 
-int get_val() {
-    val = val + 1;
-    return val;
+int bar(int& y) {
+    y += 2;
+    std::cout << "bar called, y = " << y << "\n";
+    return y;
 }
 
 template<typename T>
-T clamp(T x, T low, T high) {
-    return x < low ? low : (x > high ? high : x);
+T min(T x, T y) {
+    return (x < y) ? x : y;
 }
 
 int main() {
-    int result = clamp(get_val(), 2, 5);
-    std::cout << "Result: " << result << ", val: " << val << std::endl;
-
-    // double d = clamp(get_val(), 2.0, 5.0); // Error: conflicting types
+    int a = 5;
+    int b = 5;
+    int result = min(foo(a), bar(b));
+    std::cout << "Result: " << result << "\n";
+    std::cout << "Final a: " << a << ", Final b: " << b << "\n";
 }

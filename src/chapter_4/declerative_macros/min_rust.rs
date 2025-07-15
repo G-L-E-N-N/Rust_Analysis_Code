@@ -9,10 +9,13 @@ fn premium_discount(brand: &mut i32) -> i32 {
 }
 
 macro_rules! min {
-    ($a:expr, $b:expr) => {
-        if $a < $b { $a } else { $b }
-    };
+    ($a:expr, $b:expr) => {{
+        let temp_a = $a;
+        let temp_b = $b;
+        if temp_a < temp_b { temp_a } else { temp_b }
+    }};
 }
+
 
 fn main() {
     let mut brand = 20;

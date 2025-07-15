@@ -8,11 +8,9 @@ members = [
     "src/chapter_4/procedural_macros"
 ]
 
-# Falls du eigene Abhängigkeiten für das Projekt brauchst (eher selten im Workspace):
-# [workspace.dependencies]
-
 
 [dependencies]
+procedural_macros = { path = "src/chapter_4/procedural_macros" }
 
 
 # chapter_2 -> syntax_overview code
@@ -123,6 +121,10 @@ path = "src/chapter_4/declerative_macros/matrix.rs"
 [[bin]]
 name = "pattern_matching"
 path = "src/chapter_4/declerative_macros/pattern_matching.rs"
+
+[[bin]]
+name = "tests"
+path = "src/chapter_4/procedural_macros_example/tests.rs"
 
 
 # chapter_5 -> abstraction and flexibility

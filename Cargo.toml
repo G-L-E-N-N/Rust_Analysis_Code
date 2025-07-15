@@ -3,14 +3,9 @@ name = "rust_analysis_code"
 version = "0.1.0"
 edition = "2021"
 
-[workspace]
-members = [
-    "src/chapter_4/procedural_macros"
-]
-
 
 [dependencies]
-procedural_macros = { path = "src/chapter_4/procedural_macros" }
+procedural_macros = { path = "procedural_macros" }
 
 
 # chapter_2 -> syntax_overview code

@@ -175,3 +175,10 @@ path = "src/chapter_5/comparison_oop/rust_reuse.rs"
 [[bin]]
 name = "static_dispatch"
 path = "src/chapter_5/comparison_oop/static_dispatch.rs"
+
+
+# chapter_5 -> Interfacing
+[[bin]]
+name = "extern"
+path = "src/chapter_5/interfacing/extern.rs"
+

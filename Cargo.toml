@@ -96,8 +96,8 @@ path = "src/chapter_3/cyclic_data_structures/cyclic_linked_list_rust.rs"
 
 # chapter_4 -> declerative macros
 [[bin]]
-name = "clamp_rust"
-path = "src/chapter_4/declerative_macros/clamp_rust.rs"
+name = "min_rust"
+path = "src/chapter_4/declerative_macros/min_rust.rs"
 
 
 [[bin]]

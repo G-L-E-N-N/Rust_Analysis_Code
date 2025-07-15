@@ -1,28 +1,22 @@
 #include <stdio.h>
 
-int foo(int* x) {
-    (*x)+=1;
-    printf("foo called, x is now %d\n", *x);
-    return *x;
+#define MIN(a, b) ((a) < (b) ? (a) : (b))
+
+int membership_discount(int price) {
+    printf("Calculating membership discount\n");
+    return price - 2; // z. B. 2 Euro Rabatt für Mitglieder
 }
 
-int bar(int* y) {
-    (*y) += 2;
-    printf("bar called, y is now %d\n", *y);
-    return *y;
+int promotion_discount(int price) {
+    printf("Calculating promotion discount\n");
+    return price - 5; // z. B. 5 Euro Rabatt für Aktion
 }
-
-#define min(X, Y) ((X) < (Y) ? (X) : (Y))
 
 int main() {
-    int a = 5;
-    int b = 5;
-    
-    int result = min(foo(&a), bar(&b));
-    
-    printf("Result: %d\n", result);
-    printf("Final a: %d\n", a);
-    printf("Final b: %d\n", b);
-    
+    int base_price = 20;
+
+    int final_price = MIN(membership_discount(base_price), promotion_discount(base_price));
+
+    printf("Final price: %d\n", final_price);
     return 0;
 }

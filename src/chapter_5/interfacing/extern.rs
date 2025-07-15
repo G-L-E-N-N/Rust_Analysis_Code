@@ -3,8 +3,8 @@ extern "C" {
 }
 
 fn main() {
-    let x = 6;
-    let y = 7;
-    let result = unsafe { multiply(x, y) };
-    println!("{} * {} = {}", x, y, result);
+    unsafe {
+    let result = multiply(3, 4);
+    println!("3 * 4 = {}", result);
+    }
 }

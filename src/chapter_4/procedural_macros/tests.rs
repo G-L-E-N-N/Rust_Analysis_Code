@@ -1,4 +1,4 @@
-use test_macros::generate_tests;
+use procedural_macros::generate_tests;
 
 generate_tests! {
     test_add => 1 + 2 == 3,

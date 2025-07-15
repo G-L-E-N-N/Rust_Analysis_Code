@@ -4,8 +4,15 @@ version = "0.1.0"
 edition = "2021"
 
 
+
 [dependencies]
 procedural_macros = { path = "procedural_macros" }
+
+
+
+[build-dependencies]
+cc = "1.0"
+
 
 
 # chapter_2 -> syntax_overview code

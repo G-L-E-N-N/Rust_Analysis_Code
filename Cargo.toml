@@ -99,20 +99,21 @@ path = "src/chapter_3/cyclic_data_structures/cyclic_linked_list_rust.rs"
 name = "min_rust"
 path = "src/chapter_4/declerative_macros/min_rust.rs"
 
-
 [[bin]]
 name = "debug_values"
 path = "src/chapter_4/declerative_macros/debug_values.rs"
-
 
 [[bin]]
 name = "debug_values_fn"
 path = "src/chapter_4/declerative_macros/debug_values_fn.rs"
 
-
 [[bin]]
 name = "matrix"
 path = "src/chapter_4/declerative_macros/matrix.rs"
+
+[[bin]]
+name = "pattern_matching"
+path = "src/chapter_4/declerative_macros/pattern_matching.rs"
 
 
 # chapter_5 -> abstraction and flexibility

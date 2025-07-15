@@ -15,6 +15,13 @@ cc = "1.0"
 
 
 
+[lib]
+name = "no_mangle"          
+crate-type = ["cdylib"] 
+path = "src/chapter_5/interfacing/no_mangle.rs"
+
+
+
 # chapter_2 -> syntax_overview code
 [[bin]]
 name = "control_flow_loops"

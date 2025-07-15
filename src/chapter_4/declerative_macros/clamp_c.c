@@ -18,7 +18,7 @@ int main() {
    
     int cheaper = MIN(normal_discount(&non_brand), premium_discount(&brand));
    
-    printf("Final price: %d\n", cheaper);
+    printf("The cheaper one will cost: %d\n", cheaper);
    
     return 0;
 }

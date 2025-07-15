@@ -3,13 +3,15 @@
 #define MIN(a, b) ((a) < (b) ? (a) : (b))
 
 int membership_discount(int price) {
-    printf("Calculating membership discount. Now: %d\n", price);
-    return price - 2; // z. B. 2 Euro Rabatt für Mitglieder
+    printf("Calculating membership discount\n");
+    price = price - 2;
+    return price; // z. B. 2 Euro Rabatt für Mitglieder
 }
 
 int promotion_discount(int price) {
-    printf("Calculating promotion discount. Now: %d\n", price);
-    return price - 5; // z. B. 5 Euro Rabatt für Aktion
+    printf("Calculating promotion discount\n");
+    price = price - 5;
+    return price; // z. B. 5 Euro Rabatt für Aktion
 }
 
 int main() {

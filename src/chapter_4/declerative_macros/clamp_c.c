@@ -8,7 +8,7 @@ int membership_discount(int price) {
 }
 
 int promotion_discount(int price) {
-    printf("Calculating promotion discount\n");
+    printf("Calculating promotion discount. Now:%d\n", price);
     return price - 5; // z. B. 5 Euro Rabatt für Aktion
 }
 

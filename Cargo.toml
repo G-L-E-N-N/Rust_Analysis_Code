@@ -117,9 +117,11 @@ path = "src/chapter_4/declerative_macros/matrix.rs"
 name = "pattern_matching"
 path = "src/chapter_4/declerative_macros/pattern_matching.rs"
 
+
+# chapter_4 -> dprocedural macros
 [[bin]]
 name = "tests"
-path = "src/chapter_4/procedural_macros_example/tests.rs"
+path = "src/chapter_4/procedural_macros/tests.rs"
 
 
 # chapter_5 -> abstraction and flexibility

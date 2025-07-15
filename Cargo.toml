@@ -3,6 +3,15 @@ name = "rust_analysis_code"
 version = "0.1.0"
 edition = "2021"
 
+[workspace]
+members = [
+    "src/chapter_4/procedural_macros"
+]
+
+# Falls du eigene Abhängigkeiten für das Projekt brauchst (eher selten im Workspace):
+# [workspace.dependencies]
+
+
 [dependencies]
 
 

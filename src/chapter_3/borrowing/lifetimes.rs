@@ -4,7 +4,7 @@ fn first_char(s: &str) -> &str {
 }
 
 // Function demonstrating explicit lifetime annotation
-fn longest<'a>(s1: &'a str, s2: &'a str) -> &'a str {
+fn longest(s1: &str, s2: &str) -> &str {
     if s1.len() > s2.len() {
         s1
     } else {

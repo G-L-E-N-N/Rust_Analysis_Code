@@ -62,6 +62,10 @@ name = "mutable_borrows"
 path = "src/chapter_3/borrowing/mutable_borrows.rs"
 
 [[bin]]
+name = "lifetimes"
+path = "src/chapter_3/borrowing/lifetimes.rs"
+
+[[bin]]
 name = "dangling_references"
 path = "src/chapter_3/borrowing/dangling_references.rs"
 

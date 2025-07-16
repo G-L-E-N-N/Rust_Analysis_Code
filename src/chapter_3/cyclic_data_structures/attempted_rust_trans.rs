@@ -45,10 +45,8 @@ fn main() {
 
     unsafe {
         if let Some(mut current) = list.head {
-            // Wir wissen, dass wir 3 Knoten eingefügt haben
             for _ in 0..3 {
                 println!("{}", (*current).value);
-                // Nächster Knoten
                 current = match (*current).next {
                     Some(next_ptr) => next_ptr,
                     None => break,

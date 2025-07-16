@@ -1,35 +1,44 @@
 struct Node {
     value: i32,
-    next: Option<Box<Node>>,
+    next: *mut Node, // raw pointer for manual cyclic reference
+}
+
+impl Node {
+    fn new(val: i32) -> *mut Node {
+        let node = Box::new(Node {
+            value: val,
+            next: std::ptr::null_mut(),
+        });
+        Box::into_raw(node) // ownership now unmanaged
+    }
 }
 
 struct CyclicList {
-    head: Option<Box<Node>>,
+    head: *mut Node,
 }
 
 impl CyclicList {
     fn new() -> Self {
-        CyclicList { head: None }
+        CyclicList {
+            head: std::ptr::null_mut(),
+        }
     }
 
     fn add_node(&mut self, val: i32) {
-        let mut new_node = Box::new(Node { value: val, next: None });
+        unsafe {
+            let new_node = Node::new(val);
 
-        if self.head.is_none() {
-            new_node.next = Some(new_node);        // Error 1
-            self.head = Some(new_node);            // Error 2
-        } else {
-            let mut temp = self.head.as_mut().unwrap(); // mutable borrow
-
-            while let Some(ref mut next_node) = temp.next {
-                if std::ptr::eq(&**next_node, self.head.as_ref().unwrap()) { // Error 3
-                    break;
+            if self.head.is_null() {
+                self.head = new_node;
+                (*new_node).next = self.head; // Error 1: raw pointer to self
+            } else {
+                let mut temp = self.head;
+                while !(*temp).next.is_null() && (*temp).next != self.head {
+                    temp = (*temp).next;
                 }
-                temp = next_node;
+                (*temp).next = new_node;
+                (*new_node).next = self.head; // Error 2: forming a cycle manually
             }
-
-            temp.next = Some(new_node);
-            temp.next.as_mut().unwrap().next = self.head.clone(); // Error 4
         }
     }
 }

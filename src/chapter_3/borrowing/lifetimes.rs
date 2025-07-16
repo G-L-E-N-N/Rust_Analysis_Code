@@ -20,8 +20,8 @@ fn main() {
     println!("The first character is: {}", ch);
 
     // Using explicit lifetime annotations
-    let string1 = String::from("Hallo");
-    let string2 = String::from("Welt!");
+    let string1 = String::from("Programming");
+    let string2 = String::from("Language");
 
     let result = longest(&string1, &string2);
     println!("The longer string is: {}", result);

@@ -25,20 +25,18 @@ impl CyclicList {
     }
 
     fn add_node(&mut self, val: i32) {
-        unsafe {
-            let new_node = Node::new(val);
+        let new_node = Node::new(val);
 
-            if self.head.is_null() {
-                self.head = new_node;
-                (*new_node).next = self.head; // Error 1: raw pointer to self
-            } else {
-                let mut temp = self.head;
-                while !(*temp).next.is_null() && (*temp).next != self.head {
-                    temp = (*temp).next;
-                }
-                (*temp).next = new_node;
-                (*new_node).next = self.head; // Error 2: forming a cycle manually
+        if self.head.is_null() {
+            self.head = new_node;
+            (*new_node).next = self.head; // Error 1: raw pointer to self
+        } else {
+            let mut temp = self.head;
+            while !(*temp).next.is_null() && (*temp).next != self.head {
+                temp = (*temp).next;
             }
+            (*temp).next = new_node;
+            (*new_node).next = self.head; // Error 2: forming a cycle manually
         }
     }
 }

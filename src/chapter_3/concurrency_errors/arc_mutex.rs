@@ -2,7 +2,7 @@ use std::sync::{Arc, Mutex};
 use std::thread;
 
 pub fn parallel_sum() {
-    let data = Arc::new(vec![1, 2, 3, 4, 5, 6, 7, 8, 9, 10]); // Shared vector with data 
+    let data: Arc<[i32]> = Arc::from(vec![1, 2, 3, 4, 5, 6, 7, 8, 9, 10]); // Shared immutable slices 
     let sum = Arc::new(Mutex::new(0)); // Shared sum variable protected by Mutex
     let mut handles = vec![];
     // Start multiple threads, each one sums a part of the data

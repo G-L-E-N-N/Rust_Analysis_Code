@@ -20,18 +20,22 @@ impl CyclicList {
         let new_node = Rc::new(RefCell::new(Node { value: val, next: None }));
 
         if let Some(head) = self.head.clone() {
-            if let Some(tail) = self.tail.take().and_then(|w| w.upgrade()) {
-                tail.borrow_mut().next = Some(new_node.clone());
+            if let Some(tail_weak) = &self.tail {
+                if let Some(tail) = tail_weak.upgrade() {
+                    tail.borrow_mut().next = Some(new_node.clone());
+                }
             }
-            self.tail = Some(Rc::downgrade(&new_node));
             new_node.borrow_mut().next = Some(head);
+            self.tail = Some(Rc::downgrade(&new_node));
         } else {
+            // Erste Node, die auf sich selbst zeigt
             new_node.borrow_mut().next = Some(new_node.clone());
             self.head = Some(new_node.clone());
             self.tail = Some(Rc::downgrade(&new_node));
         }
     }
 }
+
 
 fn main() {
     let mut list = CyclicList::new();

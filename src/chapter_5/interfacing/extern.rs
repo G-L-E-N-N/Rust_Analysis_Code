@@ -4,7 +4,7 @@ extern "C" {
 
 fn main() {
     unsafe {
-    let result = multiply(3, 4);
-    println!("3 * 4 = {}", result);
+        let result = multiply(3, 4);
+        println!("3 * 4 = {}", result);
     }
 }

@@ -4,7 +4,7 @@ This repository contains all code examples from the bachelor thesis *"Analysis o
 
 ## Structure
 
-The folder structure mirrors the organization of the thesis. Each directory corresponds to a specific chapter or section discussed in the thesis, containing the relevant Rust source files and any associated C code used for FFI examples.
+The folder structure mirrors the organization of the thesis. Each directory corresponds to a specific chapter or section discussed in the thesis, containing the relevant Rust source files and any C or C++ code that was shown in the Bachelors thesis.
 
 ## Running the Code
 
@@ -17,4 +17,4 @@ The procedural macros example must be executed using `cargo test --bin <binary-n
 For example:
 
 ```bash
-cargo run --bin extern.rs
+cargo run --bin extern

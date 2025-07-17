@@ -15,13 +15,6 @@ cc = "1.0"
 
 
 
-[lib]
-name = "no_mangle"          
-crate-type = ["cdylib"] 
-path = "src/chapter_5/interfacing/no_mangle.rs"
-
-
-
 # chapter_2 -> syntax_overview code
 [[bin]]
 name = "control_flow_loops"
@@ -192,4 +185,8 @@ path = "src/chapter_5/comparison_oop/static_dispatch.rs"
 [[bin]]
 name = "extern"
 path = "src/chapter_5/interfacing/extern.rs"
+
+[[bin]]
+name = "calling_dot_product"
+path = "src/chapter_5/interfacing/calling_dot_product.rs"
 
